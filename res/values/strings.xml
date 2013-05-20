@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="questionlists_folder">Listas de Questões</string>
+    <string name="users_folder">Usuários Salvos</string>
+    
+    <string name="app_name">LECA</string>
+    <string name="tnew">Responder uma Lista de Questões</string>
+    <string name="load">Voltar a responder uma Lista de Questões salva</string>
+    <string name="exit">Sair</string>
+    
+<!--    <string name="ok">Ok</string> -->
+    <string name="erro">Erro!</string>
+    <string name="nosdcard">O armazenamento externo não está disponível! Verifique seu SD Card.</string>
+    
+    <string name="qlerro1">Não foi possível carregar a Lista de Questões do arquivo \"</string>
+    <string name="qlerro2">\". Este arquivo está corrompido ou não representa uma Lista de Questões.</string>
+    <string name="usererro1">Não foi possível carregar o Usuário do arquivo \"</string>
+    <string name="usererro2">\". Este arquivo está corrompido ou não representa um Usuário.</string>
+    
+    <string name="aviso">Aviso!</string>
+    <string name="dirvazio">Este diretório está vázio, aperte OK para voltar.</string>
+    <string name="carregando">Carregando&#8230;</string>
+    <string name="carregandoarquivo">Carregando arquivo&#8230;</string>
+    <string name="carregandolista">Carregando Lista de Questões&#8230;</string>
+    <string name="carregandouser">Carregando Usuário&#8230;</string>
+    
+    <string name="digitenome">Digite seu Nome:</string>
+    <string name="erronomevazio">O nome não pode ser vazio!</string>
+    
+    <string name="erroservice">Ocorreu um erro no serviço do aplicativo!</string>
+    
+    <string name="backSalvar">Salvar progresso?</string>
+    <string name="backSalvarMessage">Deseja salvar o estado atual da lista de questões para continuar futuramente?</string>
+   	<string name="yes">Sim</string>
+   	<string name="no">Não</string>
+   	<string name="cancel">Cancelar</string>
+   	<string name="saving">Salvando&#8230;</string>
+   	<string name="savingmessage">Salvando arquivo&#8230;</string>
+
+	<string name="delete">Excluir Arquivo</string>
+	<string name="deletemessage1">Tem certeza que deseja excluir o arquivo \"</string>
+	<string name="deletemessage2">\"?</string>
+	
+	<string name="rightanswer">Acertou! :)</string>
+	<string name="wronganswer">Errado! :(</string>
+	
+	<string name="loading_results">Calculando resultados...</string>
+	<string name="results">Resultados</string>
+	<string name="corrects">Acertos</string>
+	<string name="total">Total</string>
+	<string name="grade">Nota</string>
+	<string name="trys">Tentativas</string>
+	
+	
+</resources>
