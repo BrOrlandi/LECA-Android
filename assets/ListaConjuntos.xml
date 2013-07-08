@@ -1,0 +1,128 @@
+<ListaQuestoes Titulo="Conjuntos">
+  <Tema>Matemática/Conjuntos</Tema>
+  <Autor>Bruno Orlandi</Autor>
+  <Data></Data>
+  <Obs>Lista de Exercícios sobre conjuntos. Exercícios de vestibulares para o 3º ano do Ensino Médio.</Obs>
+  <Idioma>Português - Brasil</Idioma>
+  <Permutar>Sim</Permutar>
+  <Avaliacao>0</Avaliacao>
+  <Questao Titulo="">
+    <Tema></Tema>
+    <Autor></Autor>
+    <Enunciado>Dado que A = {2,4,6} e B = {2,3,5}. Obter n(A⋂B), ou seja, o número de elementos da intersecção entre A e B.</Enunciado>
+    <Correta>19176</Correta>
+    <Permutar>Nao</Permutar>
+    <Alternativa>0</Alternativa>
+    <Alternativa>1</Alternativa>
+    <Alternativa>2</Alternativa>
+    <Alternativa>3</Alternativa>
+    <Alternativa>4</Alternativa>
+  </Questao>
+  <Questao Titulo="">
+    <Tema></Tema>
+    <Autor></Autor>
+    <Enunciado>Feita uma pesquisa entre 100 alunos, do ensino médio, acerca das disciplinas português, geografia e história, constatou-se que 65 gostam de português, 60 gostam de geografia, 50 gostam de história, 35 gostam de português e geografia, 30 gostam de geografia e história, 20 gostam de história e português e 10 gostam dessas três disciplinas. O número de alunos que não gosta de nenhuma dessas disciplinas é</Enunciado>
+    <Correta>9870</Correta>
+    <Permutar>Nao</Permutar>
+    <Alternativa>0</Alternativa>
+    <Alternativa>5</Alternativa>
+    <Alternativa>10</Alternativa>
+    <Alternativa>15</Alternativa>
+    <Alternativa>20</Alternativa>
+  </Questao>
+  <Questao Titulo="">
+    <Tema></Tema>
+    <Autor></Autor>
+    <Enunciado>Sejam os conjuntos numéricos A = {2, 4, 8,12,14}; B = {5,10,15, 20, 25} e C = {1, 2, 3,18, 20} e ∅ o conjunto vazio. É correto afirmar que:</Enunciado>
+    <Correta>70718</Correta>
+    <Permutar>Sim</Permutar>
+    <Alternativa>B∩C = ∅</Alternativa>
+    <Alternativa> A - C = {-6,1, 2, 4, 5}</Alternativa>
+    <Alternativa> A∩C = {1, 2, 3, 4, 8,12,14, 20 }</Alternativa>
+    <Alternativa> (A - C) ∩ (B - C) = ∅</Alternativa>
+    <Alternativa> A∪C = {3, 6,11, 20, 34 }</Alternativa>
+  </Questao>
+  <Questao Titulo="">
+    <Tema></Tema>
+    <Autor></Autor>
+    <Enunciado>Uma escola realizou uma pesquisa sobre os hábitos alimentares de seus alunos.
+Alguns resultados dessa pesquisa foram:
+• 82% do total de entrevistados gostam de chocolate;
+• 78% do total de entrevistados gostam de pizza; e
+• 75% do total de entrevistados gostam de batata frita.
+
+Então, é CORRETO afirmar que, no total de alunos entrevistados, a porcentagem dos que gostam, ao mesmo tempo, de chocolate, de pizza e de batata frita é, pelo menos, de</Enunciado>
+    <Correta>54317</Correta>
+    <Permutar>Sim</Permutar>
+    <Alternativa>25%</Alternativa>
+    <Alternativa>30%</Alternativa>
+    <Alternativa>35%</Alternativa>
+    <Alternativa>40%</Alternativa>
+  </Questao>
+  <Questao Titulo="">
+    <Tema></Tema>
+    <Autor></Autor>
+    <Enunciado>Se A ⊂ B e B = {10, 23, 12, {1,2}}, então A não pode ser: </Enunciado>
+    <Correta>35360</Correta>
+    <Permutar>Sim</Permutar>
+    <Alternativa>Ø</Alternativa>
+    <Alternativa>{1}</Alternativa>
+    <Alternativa>{10, 23, 12}</Alternativa>
+    <Alternativa>{15, 10}∩{13,10}</Alternativa>
+    <Alternativa>{1, 2}</Alternativa>
+  </Questao>
+  <Questao Titulo="">
+    <Tema></Tema>
+    <Autor></Autor>
+    <Enunciado>Seja n um número natural, que possui exatamente três divisores positivos, e seja X o conjunto de todos os divisores positivos de n . O número de elementos do conjunto das partes de X é:</Enunciado>
+    <Correta>23406</Correta>
+    <Permutar>Nao</Permutar>
+    <Alternativa>64</Alternativa>
+    <Alternativa>128</Alternativa>
+    <Alternativa>256</Alternativa>
+    <Alternativa>512</Alternativa>
+  </Questao>
+  <Questao Titulo="">
+    <Tema></Tema>
+    <Autor></Autor>
+    <Enunciado>Dado que A = {2,4,6} e B = {2,3,5}. Obter A⋂B, ou seja, a intersecção entre A e B. </Enunciado>
+    <Correta>29581</Correta>
+    <Permutar>Sim</Permutar>
+    <Alternativa>{2,4,6}</Alternativa>
+    <Alternativa>{2,3,5}</Alternativa>
+    <Alternativa>{2,4,3,5,6}</Alternativa>
+    <Alternativa>{}</Alternativa>
+    <Alternativa>{2}</Alternativa>
+  </Questao>
+  <Questao Titulo="">
+    <Tema></Tema>
+    <Autor></Autor>
+    <Enunciado>Todos os candidatos inscritos num vestibular escolheram na ficha de inscrição que preencheram uma única entre as três seguintes situações prévias (em relação ao ano anterior): freqüentou um cursinho, acabou de sair do ensino médio ou estudou sozinho. Por um erro no processamento dos dados, foi gerado um relatório sobre essas respostas apenas com as seguintes informações:
+
+• 800 não fizeram cursinho,
+• 1200 não acabaram de sair do ensino médio,
+• 1500 não ficaram estudando sozinhos durante o último ano.
+
+
+Com isso, conclui-se que o número total de inscritos foi igual a </Enunciado>
+    <Correta>35786</Correta>
+    <Permutar>Sim</Permutar>
+    <Alternativa>1250</Alternativa>
+    <Alternativa>1750</Alternativa>
+    <Alternativa>2500</Alternativa>
+    <Alternativa>3500</Alternativa>
+    <Alternativa>4750</Alternativa>
+  </Questao>
+  <Questao Titulo="">
+    <Tema></Tema>
+    <Autor></Autor>
+    <Enunciado>Quantos são os subconjuntos de {1, 2, 3, 4, 5, 6} que contêm pelo menos um múltiplo de 3?</Enunciado>
+    <Correta>21142</Correta>
+    <Permutar>Sim</Permutar>
+    <Alternativa>32</Alternativa>
+    <Alternativa>36</Alternativa>
+    <Alternativa>48</Alternativa>
+    <Alternativa>60</Alternativa>
+    <Alternativa>64</Alternativa>
+  </Questao>
+</ListaQuestoes>

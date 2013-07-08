@@ -1,6 +1,14 @@
 package com.sistemainterpretacao.android;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -86,21 +94,23 @@ public class MainMenu extends Activity implements OnClickListener{
 	 */
 	public static File getPath(Context context, String directory){
 		File root = getRootPath(context);
+		
 		File dir = null;
-		if(mExternalStorageWriteable)
-		{
+//		if(mExternalStorageWriteable)
+//		{
 			//Directory
 			dir = new File(root,directory);
 			if(!dir.exists()) // if not exists
 			{
 				dir.mkdir();
 			}
-		}
-		else
-		{
-			messageDialog(context, R.string.erro, R.string.nosdcard,null);
-		}
+//		}
+//		else
+//		{
+//			messageDialog(context, R.string.erro, R.string.nosdcard,null);
+//		}
 		return dir;
+		
 	}
 	
 	/**
@@ -109,23 +119,51 @@ public class MainMenu extends Activity implements OnClickListener{
 	 * @return um File que representa o diretório.
 	 */
 	public static File getRootPath(Context context) {
-		updateExternalStorageState();
+//		updateExternalStorageState();
 		File dir = null;
-		if(mExternalStorageWriteable)
-		{
-			File f = Environment.getExternalStorageDirectory();
+//		if(mExternalStorageWriteable)
+//		{
+//			File f = Environment.getExternalStorageDirectory();
+			File f = context.getFilesDir();
 			// Pasta principal do aplicativo no SD Card
 			dir = new File(f,ROOT_DIR);
 			if(!dir.exists()) // if not exists
 			{
-				dir.mkdir();
+				dir = context.getDir(ROOT_DIR, Context.MODE_PRIVATE);
+				//dir.mkdir();
+				File dirQ = new File(dir,QUESTIONLIST_DIR);
+				dirQ.mkdir();
+				try {
+					InputStream is = context.getAssets().open("ListaC.xml");
+					String read = readInputStreamFile(is);
+					File lista = new File(dirQ, "ListaC.xml");
+					writeFile(lista, read);
+					
+					is = context.getAssets().open("ListaConjuntos.xml");
+					read = readInputStreamFile(is);
+					lista = new File(dirQ, "ListaConjuntos.xml");
+					writeFile(lista, read);
+					
+				} catch (FileNotFoundException e) {
+					e.printStackTrace();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+
 			}
-		}
-		else
-		{
-			messageDialog(context, R.string.erro, R.string.nosdcard,null);
-		}
+//		}
+//		else
+//		{
+//			messageDialog(context, R.string.erro, R.string.nosdcard,null);
+//		}
 		return dir;
+	}
+	
+	public static void deleteRecursive(File f){
+		if(f.isDirectory())
+			for(File fin : f.listFiles())
+				deleteRecursive(fin);
+		f.delete();
 	}
 	
 	/**
@@ -180,6 +218,51 @@ public class MainMenu extends Activity implements OnClickListener{
 	public static void messageDialog(Context context, int title, int message, DialogInterface.OnClickListener listener){
 		String m = (String)context.getText(message);
 		messageDialog(context, title, m, listener);
+	}
+	
+	public static boolean writeFile(File f, String string){
+		boolean saved = false;
+		BufferedWriter bw = null;
+	
+		try{
+			bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(f), "UTF-8"));
+			try{
+				bw.write(string);
+				saved = true;
+			}
+			finally{
+				bw.close();
+			}
+		}
+		catch(IOException ex){
+			ex.printStackTrace();
+		}
+		return saved;
+	}
+	
+	
+	public static String readInputStreamFile(InputStream input){
+		BufferedReader br = null;
+		StringBuilder sb = new StringBuilder();
+	
+		try{
+			br = new BufferedReader(new InputStreamReader(input,"UTF-8"));
+			try{
+				String s;
+				while((s = br.readLine()) != null)
+				{
+					sb.append(s);
+					sb.append("\n");
+				}
+			}
+			finally{
+				br.close();
+			}
+		}
+		catch (IOException ex) {
+			ex.printStackTrace();
+		}
+		return sb.toString();
 	}
     
 }
